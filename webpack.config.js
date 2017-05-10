@@ -5,7 +5,7 @@ const packageJson = require('./package.json');
 
 module.exports = {
     entry: {
-        app: './source/index.js',
+        app: './source/main.js',
         vendor: Object.keys(packageJson['dependencies'])
     },
     output: {

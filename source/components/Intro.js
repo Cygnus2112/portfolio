@@ -8,7 +8,7 @@ export class Intro extends React.Component {
 		return <div id='intro'>
       <div className='cta container'>
 
-          <h1 style={{'font-size': '50px'}}>Thomas Leupp</h1>
+          <h1 style={{'fontSize': '50px'}}>Thomas Leupp</h1>
 
         <h2>Full-Stack Web & Mobile Developer</h2>
         <div className='icons'>

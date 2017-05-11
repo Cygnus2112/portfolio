@@ -13,22 +13,30 @@ export class Projects extends React.Component {
     
   			<ul>
     			<li>
+            <a href='https://play.google.com/store/apps/details?id=com.fencer'>
       				<span><img src='/assets/fencer.jpg' alt='Fencer' width='355px' height='200px' /></span>
-              <p>Fencer</p>
+            </a>
+            <p className='project-title'>Fencer</p>
     			</li>
     			<li>
+            <a href='http://budgieapp.herokuapp.com/'>
       				<span><img src='/assets/budgie.png' alt='Budgie' width='355px' height='200px' /></span>
-              <p>Budgie</p>
+            </a>
+            <p className='project-title'>Budgie</p>
     			</li>
         </ul>
         <ul>
-        		<li>
+        	<li>
+            <a href='https://play.google.com/store/apps/details?id=com.beermeandroid'>
       				<span><img src='/assets/beerme.png' alt='BeerMe!' width='355px' height='200px' /></span>
-              <p>BeerMe!</p>
+            </a>
+            <p className='project-title'>BeerMe!</p>
     			</li>
-        		<li>
+        	<li>
+            <a href='http://gameswap-app.herokuapp.com'>
       				<span><img src='/assets/gameswap.png' alt='GameSwap' width='355px' height='200px' /></span>
-              <p>GameSwap</p>
+            </a>
+            <p>GameSwap</p>
     			</li>
   			</ul>
 

@@ -90,6 +90,10 @@ a {
 	}
 }
 
+.project-title {
+	font-size: 20px;
+}
+
 #intro {
 	background: $color1;
 	display: flex;
@@ -162,7 +166,7 @@ a {
 			position: relative;
 			flex-direction: column;
 			align-items: center;
-			cursor: pointer;
+		//	cursor: pointer;
 		//	@include transition(background 0.4s);
       		transition-property: background;
       		transition-duration: 0.4s;

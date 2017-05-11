@@ -52,6 +52,12 @@ a {
 	background: #fff;
 	padding: 0.85em 0;
 
+	position:fixed; 
+	top:0px; 
+	margin:auto; 
+	z-index:100000;
+	width: 100%;
+
 	.container {
 		display: flex;
 		flex-direction: row;
@@ -89,6 +95,8 @@ a {
 	justify-content: center;
 	align-items: center;
 	padding: 4em 0;
+
+	margin: 35px 0 0 0;
 
 	.cta {
 		display: flex;

@@ -69,9 +69,7 @@ gulp.task('watch:js', callback => {
     webpackCompiler.watch({ aggregateTimeout: 500 }, (err, stats) => {
         gutil.log(gutil.colors.bold.cyan('Compiled bundles.') + '\n' + stats.toString({ chunks: false, colors: true }));
         
-
         //global.gc();
-
         // global.gc() forces garbage collection.
 
         if (!watchJsCallbackCalled) {

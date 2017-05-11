@@ -4,20 +4,26 @@ export class Projects extends React.Component {
 	render() {
 		return <div id='projects'>
   			<div className='container'>
-    			<h2>Projects</h2>
+    			<h1>Projects</h1>
   			</div>
   			<ul>
     			<li>
-      				<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/denali_alaska.jpg' />     
+      				<span><img src='/assets/fencer.jpg' alt='Fencer' width='355px' height='200px' /></span>
+              <p>Fencer</p>
     			</li>
     			<li>
-      				<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/mirror-lake_california.jpg' />
+      				<span><img src='/assets/budgie.png' alt='Budgie' width='355px' height='200px' /></span>
+              <p>Budgie</p>
+    			</li>
+        </ul>
+        <ul>
+        		<li>
+      				<span><img src='/assets/beerme.png' alt='BeerMe!' width='355px' height='200px' /></span>
+              <p>BeerMe!</p>
     			</li>
         		<li>
-      				<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/mirror-lake_california.jpg' />
-    			</li>
-        		<li>
-      				<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/mirror-lake_california.jpg' />
+      				<span><img src='/assets/gameswap.png' alt='GameSwap' width='355px' height='200px' /></span>
+              <p>GameSwap</p>
     			</li>
   			</ul>
 		</div>

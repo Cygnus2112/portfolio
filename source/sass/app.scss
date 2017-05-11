@@ -56,7 +56,7 @@ a {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 	}
 
 	.logo, nav a {
@@ -125,9 +125,14 @@ a {
 }
 
 #projects {
-	padding-top: 4em;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 
-	h2 {
+	padding-top: 1em;
+
+	h1 {
 		margin: 0;
 		text-align: center;
 	}
@@ -143,25 +148,30 @@ a {
 		list-style: none;
 
 		li {
-			background: rgba(0,0,0,0.35);
 			position: relative;
 			flex-direction: column;
+			align-items: center;
 			cursor: pointer;
 		//	@include transition(background 0.4s);
       		transition-property: background;
       		transition-duration: 0.4s;
+      		margin: 20px;
 
-			&:hover {
+			span {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				border-radius: 5px;
+
 				background: rgba(0,0,0,0);
+
+				&:hover {
+					background: rgba(0,0,0,0.35); 
+				}
+
 			}
 
-			@media (min-width: 500px) {
-				flex: 50%;
-			}
 
-			@media (min-width: 800px) {
-				flex: 25%;
-			}
 
 			div {
 				position: absolute;
@@ -192,8 +202,12 @@ a {
 			}
 
 			img {
+						    border: 2px solid silver;
+      			border-radius: 5px;
 				position: relative;
 				z-index: -1;
+
+				
 			}
 		}
 	}

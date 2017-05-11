@@ -5,9 +5,8 @@ export class Header extends React.Component {
 		return <header>
   			<div id='main-header'>
     			<div className='container'>
-      				<a href='#' className='logo'>Thomas Leupp</a>
-
     				<nav>
+                <a href='#'>Home</a>
       					<a href='#'>Blog</a>
       					<a href='#'>Projects</a>
     				</nav>

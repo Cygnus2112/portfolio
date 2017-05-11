@@ -111,11 +111,16 @@ a {
 }
 
 .project-image {
-					background: rgba(0,0,0,0);
+	background: rgba(0,0,0,0);
 
-				&:hover {
-					background: rgba(0,0,0,0.35); 
-				}
+	&:hover {
+		background: rgba(0,0,0,0.35); 
+	}
+}
+
+#foot {
+	margin: 10px;
+	font-size: 12px;
 }
 
 #intro {
@@ -169,7 +174,7 @@ a {
 
 	padding-top: 1em;
 
-	border: 2px solid black;
+	// border: 2px solid black;
 
 	h1 {
 		margin: 0;

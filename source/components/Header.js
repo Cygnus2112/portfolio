@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { scrollToTop } from 'react-scrollable-anchor';
 
 export class Header extends React.Component {
   constructor(props){
@@ -11,9 +12,9 @@ export class Header extends React.Component {
   			<div id='main-header'>
     			<div className='container'>
     				<nav>
-                <a onClick={() => this.props.scrollToTop('intro')} >Home</a>
+                <a href='#intro' onClick={() => scrollToTop()} >Home</a>
       					<a href='#'>Blog</a>
-      					<a onClick={() => {console.log('clicked!'); this.props.scrollToTop('projects')}} >Projects</a>
+      					<a href='#projects-top' >Projects</a>
     				</nav>
     			</div>
   			</div>

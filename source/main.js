@@ -16,7 +16,7 @@ class App extends React.Component {
   	scrollToTop(elem){
   		let e = document.getElementById(elem);
 
-		e.scrollIntoView(false);
+		e.scrollIntoView();
   	}
 
 	render(){

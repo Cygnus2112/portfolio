@@ -14,12 +14,24 @@ html {
 
 body {
     font-family: 'Open Sans';
-    background: #efefef;
+ //   background: #efefef;
+ 	background: $color2;
     display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	color: #3a3a3a;
+	margin: 0px;
 }
+
+
+.link {
+	&:hover {
+		font-weight: 600;
+	}
+	
+}
+
+
 
 .icons {
 	width: 150px;
@@ -29,8 +41,6 @@ body {
 	align-items: center;
 }
 
-
-
 a {
 	text-decoration: none;
 	cursor: pointer;
@@ -38,8 +48,8 @@ a {
 
 .container {
 	margin: 0 auto;
-	width: 90%;
-	max-width: 1170px;
+	width: 100%;
+	// max-width: 1170px;
 }
 
 .soc-media-ul a {
@@ -68,8 +78,8 @@ a {
 
 	.logo, nav a {
 		padding: 10px;
-    
-    @media (min-width: 500px) {
+   
+    	@media (min-width: 500px) {
 			padding: 10px 15px;
 		}
 	}
@@ -111,10 +121,13 @@ a {
 }
 
 .project-image {
-	background: rgba(0,0,0,0);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 5px;
 
 	&:hover {
-		background: rgba(0,0,0,0.35); 
+		opacity: 0.5;
 	}
 }
 
@@ -167,12 +180,14 @@ a {
 }
 
 #projects {
+	background: $color2;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 
 	padding-top: 1em;
+	color: white;
 
 	// border: 2px solid black;
 
@@ -200,7 +215,7 @@ a {
       		transition-property: background;
       		transition-duration: 0.4s;
       		margin: 20px;
-
+/*
 			span {
 				display: flex;
 				flex-direction: column;
@@ -208,7 +223,7 @@ a {
 				border-radius: 5px;
 
 			}
-
+*/
 
 
 	/*		div {
@@ -227,7 +242,7 @@ a {
 				border: 2px solid silver;
       			border-radius: 5px;
 				position: relative;
-				z-index: -1;
+			//	z-index: -1;
 
 				
 			}

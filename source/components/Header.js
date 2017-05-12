@@ -12,9 +12,9 @@ export class Header extends React.Component {
   			<div id='main-header'>
     			<div className='container'>
     				<nav>
-                <a href='#intro' onClick={() => scrollToTop()} >Home</a>
-      					<a href='#'>Blog</a>
-      					<a href='#projects-top' >Projects</a>
+                <a className='link' href='#intro' onClick={() => scrollToTop()} >Home</a>
+      					<a className='link' href='#'>Blog</a>
+      					<a className='link' href='#projects-top' >Projects</a>
     				</nav>
     			</div>
   			</div>

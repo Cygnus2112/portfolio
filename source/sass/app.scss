@@ -146,6 +146,8 @@ a {
 	justify-content: center;
 	background: $color2;
 	margin: 35px 0 0 0;
+
+	font-size: 16px;
 }
 
 #blog-text {
@@ -173,6 +175,14 @@ a {
 	text-align: center;
 }
 
+.section-title {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.bl {
+	font-weight: 600;
+}
 
 
 #intro {

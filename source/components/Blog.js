@@ -20,7 +20,10 @@ export class Blog extends React.Component {
           <p>As you might guess, componentWillMount() is invoked immediately before a component is mounted. You can use this method to initialize variables and any other aspects of your component{"'"}s default setup that don{"'"}t require access to mounted UI elements -- in other words, all the things you normally do in the component{"'"}s constructor() method. In fact, best practice dictates that you use constructor() instead of componentWillMount().</p>
           <p>If you do decide to use componentWillMount(), know that it is only ever called <span className='bl'>once</span>, and that calling setState() within this method <span className='bl'>will not trigger a re-render</span>.</p>
           <p className='section-title'>componentDidMount</p>
-          <p>Immediately after a component is mounted and its render() method is first called, componentDidMount().</p>
+          
+          <p>componentDidMount() is called immediately after a component is mounted. If you{"'"}re fetching data from a third-party API or setting up event listeners, this is the place to instantiate those operations. </p>
+          <p>React Native exposes several APIs that allow you to hook into device features, including AppState, BackHandler, and Geolocation, all of which use the familiar event listener callback syntax. For Fencer, an Android app I built that enables users to create and share Snapchat-style Geofilters, I need to track a user{"'"}s location to determine if they{"'"}ve entered a geofence area. I utilized componentDidMount() to set up a watcher using React Native{"'"}s Geolocation API:</p>
+       
           <p className='section-title'>componentWillReceiveProps</p>
           <p>componentWillReceiveProps() is invoked before a mounted component receives new props.</p> 
           <p>

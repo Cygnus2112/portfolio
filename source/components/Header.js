@@ -41,7 +41,7 @@ export class Header extends React.Component {
                   }
                   }}>Home</a>
       					{!this.state.blogClicked ? (<a className='link' onClick={ () => { scrollToElement('#projects', {duration: 500} ) } }>Projects</a>) : (null)}
-                {!this.state.blogClicked ? (<a className='link' onClick={() => {this.props.handleClick(true); scrollToElement('#blog-top', {duration: 500, offset: -500}) } }>Blog</a>) : (null)}
+                {!this.state.blogClicked ? (<a className='link' onClick={() => {this.props.handleClick(true); setTimeout(()=>{ scrollToElement('#blog-top', {duration: 0, offset: -500})}, 50) } }>Blog</a>) : (null)}
     				</nav>
     			</div>
   			</div>

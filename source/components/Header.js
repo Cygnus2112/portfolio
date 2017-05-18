@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { scrollToTop } from 'react-scrollable-anchor';
 
+var scrollToElement = require('scroll-to-element');
+
 export class Header extends React.Component {
   constructor(props){
     super(props);
@@ -24,15 +26,22 @@ export class Header extends React.Component {
   			<div id='main-header'>
     			<div className='container'>
     				<nav>
-                <a className='link' href='#intro' onClick={ () => {
+                <a className='link'  onClick={ () => {
                   if(this.state.blogClicked){
                     this.props.handleClick(); 
+
+                    setTimeout(()=>{
+                        scrollToElement('#intro', {duration: 0, offset: -200})
+                    }, 50)
+                      
+
                   } else {
+                    scrollToElement('#intro', {duration: 500, offset: -50})
                  //   scrollToTop()
                   }
                   }}>Home</a>
-      					{!this.state.blogClicked ? (<a className='link' href='#projects-top' >Projects</a>) : (null)}
-                {!this.state.blogClicked ? (<a className='link' href='#blog' onClick={() => {this.props.handleClick(true) } }>Blog</a>) : (null)}
+      					{!this.state.blogClicked ? (<a className='link' onClick={ () => { scrollToElement('#projects', {duration: 500} ) } }>Projects</a>) : (null)}
+                {!this.state.blogClicked ? (<a className='link' onClick={() => {this.props.handleClick(true); scrollToElement('#blog-top', {duration: 500, offset: -500}) } }>Blog</a>) : (null)}
     				</nav>
     			</div>
   			</div>

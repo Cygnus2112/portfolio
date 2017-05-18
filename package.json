@@ -15,7 +15,8 @@
     "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-scrollable-anchor": "^0.4.2"
+    "react-scrollable-anchor": "^0.4.2",
+    "scroll-to-element": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",

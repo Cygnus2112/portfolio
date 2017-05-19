@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { scrollToTop } from 'react-scrollable-anchor';
+//import { scrollToTop } from 'react-scrollable-anchor';
 
 var scrollToElement = require('scroll-to-element');
 

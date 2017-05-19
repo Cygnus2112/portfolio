@@ -31,6 +31,13 @@ body {
 	
 }
 
+.code {
+	background: black;
+	color: white;
+	padding: 10px;
+	font-size: 14px;
+	margin: 10px;
+}
 
 
 .icons {
@@ -138,6 +145,52 @@ a {
 	// font-size: 26px;
 	text-align: center;
 }
+
+#blog-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: $color2;
+	margin: 35px 0 0 0;
+
+	font-size: 16px;
+}
+
+#blog-text {
+	background: $color1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border: 2px solid white;
+
+	padding: 0 10px;
+
+	@media (min-width: 800px) {
+		display: block;
+		width: 800px;				
+	}
+}
+
+.blog-title {
+	font-size: 36px;
+	text-align: center;
+}
+
+#byline {
+	text-align: center;
+}
+
+.section-title {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.bl {
+	font-weight: 600;
+}
+
 
 #intro {
 	background: $color1;

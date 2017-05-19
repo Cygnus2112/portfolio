@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+//import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 //        <ScrollableAnchor id={'intro-top'}>
 
